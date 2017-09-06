@@ -87,7 +87,7 @@ bool make()
 		return false;
 	int max=size*size;
 	int x=size/2,y=0;
-	int data[size][size]=0;
+	int data[size][size]={};
 	for(int i=1;i<max;i++)
 	{
 		if(data[x][y]==0)
