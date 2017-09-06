@@ -88,28 +88,29 @@ bool make()
 	int max=size*size;
 	int x=size/2,y=0;
 	int data[size][size]={};
+	//begin to make
 	for(int i=1;i<max;i++)
 	{
 		if(data[x][y]==0)
 		{
 			data[x][y]=i;
-			x++,y--;
-			if(x>4) x=0;
-			if(y<0) y=5;
+			x--,y--;
+			if(x<0) x=4;
+			if(y<0) y=4;
 		}
 		else
 		{
 			y++;
 			data[x][y]=i;
-			if(x>4) x=0;
-			if(y<0) y=5;
+			if(y>4) y=0;
 		}
 	}
+	//print all
 	for(int i=0;i<size;i++)
 	{
 		for(int j=0;j<size;j++)
 		{
-			cout<<data[i][j];
+			cout<<data[j][i]<<" ";
 		}
 		cout<<endl;
 	}
