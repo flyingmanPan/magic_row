@@ -90,6 +90,25 @@ bool make()
 	int data[size][size]=0;
 	for(int i=1;i<max;i++)
 	{
-		
+		if(data[x][y]==0)
+		{
+			data[x][y]==i;
+			x++,y--;
+			if(x>4) x=0;
+			if(y<0) y=5;
+		}
+		else
+		{
+			y++;
+			if(x>4) x=0;
+			if(y<0) y=5;
+		}
+	}
+	for(int i=0;i<size;i++)
+	{
+		for(int j=0;j<size;j++)
+		{
+			cout<<data[i][j];
+		}
 	}
 }
