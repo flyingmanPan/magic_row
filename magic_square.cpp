@@ -92,7 +92,7 @@ bool make()
 	{
 		if(data[x][y]==0)
 		{
-			data[x][y]==i;
+			data[x][y]=i;
 			x++,y--;
 			if(x>4) x=0;
 			if(y<0) y=5;
