@@ -35,7 +35,7 @@ bool judge()
 		basic+=data[0][i];
 	}
 	//cout<< "\n"<<basic<< "\n";
-	
+	//col
 	for(int i=0;i<size;i++)
 	{
 		int temp=0;
@@ -50,6 +50,7 @@ bool judge()
 		}
 			
 	}
+	//row
 	for(int i=0;i<size;i++)
 	{
 		int temp=0;
@@ -63,7 +64,7 @@ bool judge()
 			return false;
 		}
 	}
-	
+	//diagonal
 	int temp1=0,temp2=0;
 	for(int i=0;i<size;i++)
 	{
@@ -79,5 +80,16 @@ bool judge()
 }
 bool make()
 {
-	;
+	int size;
+	cout<< "Input dimension>";
+	cin>>size;
+	if(size%2==0)
+		return false;
+	int max=size*size;
+	int x=size/2,y=0;
+	int data[size][size]=0;
+	for(int i=1;i<max;i++)
+	{
+		
+	}
 }
