@@ -100,6 +100,7 @@ bool make()
 		else
 		{
 			y++;
+			data[x][y]=i;
 			if(x>4) x=0;
 			if(y<0) y=5;
 		}
@@ -110,5 +111,6 @@ bool make()
 		{
 			cout<<data[i][j];
 		}
+		cout<<endl;
 	}
 }
